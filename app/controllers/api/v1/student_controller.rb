@@ -40,6 +40,7 @@ class Api::V1::StudentController < ApplicationController
     @student_data = {
       "studentData": [ 
         {
+          "id": 1,
           "firstName": "Alice",
           "lastName": "Pereira Rodrigues",
           "assumedName": "",
@@ -60,8 +61,20 @@ class Api::V1::StudentController < ApplicationController
               "issuer": "SSP"
             },
             "cpf": "17143053929",
-            "electoralCard": "", 
-            "certificateReservist": ""
+            "electoralCard": "516485230175", 
+            "certificateReservist": "",
+          }, 
+          "parents": {
+            "motherName": "Joana Pereira Rodrigues",
+            "fatherName": "Jurandir Oliveira Rodrigues"
+          },
+          "address": {
+            "street": "Rua da Vitória",
+            "number": "66",
+            "zip": "07600100",
+            "district": "Anhangabau",
+            "city": "São Paulo",
+            "state": "SP"
           }
         }
       ]

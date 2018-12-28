@@ -1,0 +1,49 @@
+# == Schema Information
+#
+# Table name: organizations
+#
+#  id                   :integer          not null, primary key
+#  organization_type_id :integer          not null
+#  document_number      :string(45)
+#  organization_name    :string(255)
+#  phone1               :string(20)
+#  phone2               :string(20)
+#  fax                  :string(20)
+#  street               :string(255)
+#  street_number        :integer
+#  city                 :string(100)
+#  state                :string(2)
+#  zipcode              :string(8)
+#  created_at           :datetime
+#  updated_at           :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  organization_type_id: 1
+  document_number: MyString
+  organization_name: MyString
+  phone1: MyString
+  phone2: MyString
+  fax: MyString
+  street_type: MyString
+  street_number: 1
+  city: MyString
+  state: MyString
+  zipcode: MyString
+
+two:
+  id: 1
+  organization_type_id: 1
+  document_number: MyString
+  organization_name: MyString
+  phone1: MyString
+  phone2: MyString
+  fax: MyString
+  street_type: MyString
+  street_number: 1
+  city: MyString
+  state: MyString
+  zipcode: MyString
