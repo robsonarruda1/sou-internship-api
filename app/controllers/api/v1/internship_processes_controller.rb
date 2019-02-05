@@ -84,7 +84,8 @@ class Api::V1::InternshipProcessesController < ApplicationController
     internshipProcess.each do |process|
       @process +=  [process]
       student = Student.select(:id, :course_class_id, :name, :academic_register, :gender).where(:id => process.student_id)
-      @process += [student:student]
+      search = student.where('name like ?', "%#{ params[:search] }%")
+      @process += [student:search]
     end
     count = {countProcess:internshipProcess.count()}
 
